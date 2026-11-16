@@ -1,0 +1,20 @@
+backend:
+  name: github
+  repo: yudeka-eureka/landig-page-maqosid-syariah
+  branch: main
+
+media_folder: "assets/images"
+public_folder: "/assets/images"
+
+collections:
+  - name: "landing"
+    label: "Landing Page Content"
+    files:
+      - file: "content/home.json"
+        label: "Halaman Utama"
+        name: "home"
+        fields:
+          - {label: "Judul Utama (Hero)", name: "hero_title", widget: "string"}
+          - {label: "Deskripsi Hero", name: "hero_description", widget: "text"}
+          - {label: "Pertanyaan Konteks & Masalah", name: "problem_questions", widget: "text"}
+          - {label: "Pernyataan Solusi (Callout)", name: "solution_callout", widget: "text"}
